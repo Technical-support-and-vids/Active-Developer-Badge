@@ -23,8 +23,8 @@ client.on('interactionCreate', (interaction) => {
     .setColor("Red")
     .setTimestamp()
     
-    return interaction.reply({ embeds: [embed] });
-    interaction.reply({ content: "https://discord.com/developers/active-developer" })
+    interaction.reply({ embeds: [embed] });
+    interaction.channel.send({ content: "https://discord.com/developers/active-developer" })
   }
 });
 
